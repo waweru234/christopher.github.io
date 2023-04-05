@@ -1,0 +1,552 @@
+/* Reset Styles */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+:root{
+--bg-color:#1f242d;
+--second-bg-color:#323946;
+--text-color:#fff;
+--main-color:#0ef;
+
+}
+html{
+    font-size: 62.5%;
+    overflow:scroll;
+}
+span {
+color:var(--main-color);
+}
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* Global Styles */
+body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color:var(--text-color);
+	background-color: var(--bg-color);
+}
+html{
+   font-size:62.5%;
+   overflow-x:scroll;
+   scroll-padding-top:9rem;
+   scroll-behavior:smooth;
+}
+html::-webkit-scrollbar{
+    width:.8rem;
+}
+html::-webkit-scrollbar-track{
+     background:transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+     background:black;
+     border-radius:4rem;
+}
+
+a {
+	text-decoration: none;
+	color: #333;
+}
+
+a:hover {
+	color: #666;
+}
+
+ul {
+	list-style: none;
+}
+
+/* Header Styles */
+header {
+background-color: black;
+box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+z-index: 999;
+}
+
+nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 1rem;
+}
+
+nav ul {
+display:flex;
+margin-left: 100rem;
+
+}
+
+nav ul li {
+margin: 0 1rem;
+
+
+}
+
+nav ul li a {
+padding: 0.5rem;
+transition: all 0.3s ease;
+color: white;
+display:flex;
+
+
+}
+
+nav ul li a:hover {
+text-decoration: underline;
+color: red;
+}
+
+/* Main Styles */
+main {
+margin-top: 5rem;
+}
+
+
+.home
+{ 
+
+    display: flex;
+    justify-content:center ;
+    text-align: center;
+    
+}
+.home-content p{
+	font-size: 1.6rem;
+}
+.home-content h1{
+    margin-bottom: 2rem;
+}
+.home-content h1{
+	font-weight: 700;
+	font-size: 3.2rem;
+    color: var(--text-color);
+    line-height: 1.3rem;
+    margin-bottom: 1rem;
+}
+.home-img img{
+    width: 35vh;
+    margin-left: 3rem;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom:2rem;
+    }
+    
+    section ul {
+    display: flex;
+    flex-wrap: wrap;
+    }
+    
+    section li {
+    flex-basis: calc(33.33% - 2rem);
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background-color: #f5f5f5;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    section li h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    }
+    
+    section li p {
+    margin-bottom: 1rem;
+    }
+.social-media a{
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    width:4rem;
+    height: 4rem;
+    background: transparent;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    color:var(--main-color);
+    margin: 3rem 1.5rem 3rem;
+    transition: .5s ease;
+}
+.social-media a:hover{
+    background: var(--main-color);
+    color: var(--second-bg-color);
+    box-shadow: 0 0 1rem var(--main-color);
+}
+.btn{
+    display: inline-block;
+    padding:1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.6rem;
+    color: var(--second-bg-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+}
+table{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	border: none;
+	margin-top: 3rem;
+	
+}
+th{
+	width: 50px;
+	height: 40px;
+
+}
+td{
+	width: 200px;
+	height: 100px;
+
+}
+
+
+section {
+	
+     min-height: 100vh;
+     padding: 10rem 9% 2rem;
+}
+.about{
+    display:flex;
+    justify-content:center ;
+    align-items: center;
+    gap: 2rem;
+    background: var(--second-bg-color);
+}
+.heading{
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+
+
+.cta-button {
+display: inline-block;
+background-color: #333;
+color: #fff;
+padding: 0.5rem 1rem;
+border-radius: 5px;
+transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+background-color: #666;
+}
+
+/* Contact Form Styles */
+label {
+display: block;
+margin-bottom: 1rem;
+font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+display: block;
+width: 100%;
+padding: 0.5rem;
+border-radius: 5px;
+border: none;
+margin-bottom: 1rem;
+background-color: black;
+color:white;
+height: 4rem;
+}
+
+input[type="submit"] {
+display: block;
+background-color: #333;
+color: #fff;
+padding: 0.5rem 1rem;
+border-radius: 5px;
+transition: all 0.3s ease;
+cursor: pointer;
+}
+
+input[type="submit"]:hover {
+background-color: #666;
+}
+/* Footer Styles */
+footer {
+background-color: #333;
+color: #fff;
+padding: 1rem;
+text-align: center;
+position: fixed;
+bottom: 0;
+left: 0;
+right: 0;
+}
+
+.footer{
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:2rem;
+padding:5rem 0;
+color:white;
+background-color:#212428;
+}
+.footer span{
+color:aqua;
+border-bottom:2px solid aqua;
+}
+.footer ion-icon 
+{
+flex-basis:calc(33% - 2rem);
+font-size:2rem;
+margin-top:2rem;
+margin-right:3rem;
+margin-bottom:3rem;
+border-radius:5px;
+padding:1rem;
+background:linear-gradient(145deg,#0f1111,#2c3033);
+
+opacity:.5;
+color:white;
+}
+.footer ion-icon:hover{
+color:red;
+cursor:pointer;
+transform:translateY(-5px);
+}
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.project{
+    background:var(--second-bg-color);
+
+}
+.project-container{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    gap:2.5rem;
+
+
+}
+.project-container .project-box{
+    position: relative;
+    border-radius: 2rem;
+     box-shadow:0 0 1rem var(--bg-color) ;
+     overflow:hidden;
+     display: flex;
+}
+.project-box img{
+    width: 100%;
+    transition: .5s ease;
+
+}
+.project-box:hover img{
+    transform: scale(1.1);
+}
+.project-box .project-layer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,.1),var(--main-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem; 
+    transform: translate(100%);
+    transition: .5s ease;
+}
+.project-box:hover .project-layer{
+    transform: translateY(0);
+}
+.project-layer h4{
+    font-size: 3rem;
+
+}
+.project-layer p{
+    font-size: 1.6rem;
+    margin:.3rem 0 1rem;
+}
+.project-box video{
+    width: 500px;
+    margin-top: 1rem;
+    height: 500px;
+}
+.contant{
+    background-color: var(--second-bg-color);
+}
+.footer{
+    height: 3rem;
+}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>chris website</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="chris.css">
+	<style>
+		
+		th, td{
+	border:1px solid white;
+}
+	</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+		<section class="home" id="home">
+            <div class="home-content">
+			<h1>CHRISTOPHER WAWERU</h1>
+			<h2>I am a Web<span> Developer</span></h2>
+            <p> I do web design and many more</p>
+            <div class="social-media">
+            
+                <a href="https://facebook.com/elonmusk">
+                 <ion-icon name="logo-facebook"></ion-icon></a>
+               <a href="https://instagram.com/elonmusk">
+       <ion-icon name="logo-instagram"></ion-icon></a>
+       <a href="https://ke.linkedin.com/">
+              <ion-icon name="logo-linkedin"></ion-icon></a>
+            </div>
+            <a href="#" class="btn">Download CV</a>
+            </div>
+            <div class="home-img">
+                <img src="file:///C:/Users/Gregory/Downloads/WhatsApp%20Image%202023-04-05%20at%2011.18.55%20AM.jpeg" alt="">
+            </div>
+		</section>
+		<section class="about" id="about">
+            <div class="about-content">
+			<h2 class="heading">About <span>Me</span> </h2>
+			<p><h3>Hello! welcome to my website,where we explore our computer skills together such as web developement, Artificial Intelligence,machine learning and data science among others.</h3>
+				
+<h2>Personal and background information;</h2><p>I am an IT specialist from Nairobi Kenya who has majored in Web developement.
+	Studies in Kenyatta university majoring on computer science.
+	</p>
+
+			</p>
+			<table >
+				<tr>
+					<th>school</th>
+					<th>Period</th>
+					<th>Acheivement</th>
+                    <th>Link</th>
+				</tr> 
+                <tr>
+					<td>The Lenana School</td>
+					<td>2017 - 2021</td>
+					<td>K.C.S.E. certificate</td>
+                    <td><a style="color:white" href="https://www.lenanaschool.sc.ke/">Lenana</a></td>
+				</tr>
+				<tr>
+					<td>kenyatta university</td>
+					<td>2021 - 2025</td>
+					<td>Bachelor's Degree(information technology)</td>
+                    <td><a style="color:white "href="https://www.ku.ac.ke/">K.U</a></td>
+				</tr>
+			</table>
+            </div>
+		</section>
+		<section id="projects" itemid="projects">
+			<h2 class="heading">My <span>Projects</span></h2>
+			<div class="project-container">
+                <div class ="project-box">
+                    <img src="file:///C:/Users/Gregory/Downloads/quantum-physics-g3d50da17e_1920.jpg" alt="">
+                    <div class="project-layer">
+                        <h4>Web Design</h4>
+                        <p>
+                            I teach web design to all my students and they become professionals
+                        </p>
+                    </div>
+                </div>
+                <div class ="project-box">
+                    <img src="file:///C:/Users/Gregory/Downloads/artificial-intelligence-gd4bd28a55_1920.jpg" alt="">
+                    <div class="project-layer">
+                        <h4>Artificial Intelligence</h4>
+                        <p>
+                            artificial intelligence is the future of the world that is why we should really work on it
+                        </p>
+                    </div>
+                </div>
+                <div class ="project-box">
+                    <img src="file:///C:/Users/Gregory/Desktop/pres/robot.jpg" alt="">
+                    <div class="project-layer">
+                        <h4>cyber security</h4>
+                        <p>
+                            I teach data privacy and data security to all my clients and they become professionals
+                        </p>
+                    </div>
+                </div>
+			
+		</div>	
+		<div class ="project-box">
+			<video controls src="file:///C:/Users/Gregory/Downloads/AI%20Beyond%20Fear.%20Short%20documentary-6y5N6DGJqxg-720p-1656429538057.mp4" alt="">
+			<div class="project-layer">
+				<h4>cyber security</h4>
+				<p>
+					I teach data privacy and data security to all my clients and they become professionals
+				</p>
+			</div>
+		</div>
+		</section>
+		<section>
+          <iframe src="https://www.bing.com/" width="500px" height="500px"></iframe>
+		</section>
+		<section id="contact">
+			<h2 class="heading">Contact <span>Me</span></h2>
+			<form>
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required>
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+				<label for="message">Message:</label>
+				<textarea id="message" name="message" required></textarea>
+				<input type="submit" value="Send">
+			</form>
+		</section>
+	
+	<section class="footer">
+	
+		<p>&copy; 2023 My Personal Website. All rights reserved.</p>
+	  
+	     </section>
+	<script src="script.js"></script>
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+       <script nomudule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	</section>
+</body>
+</html>
+
+
+
+
